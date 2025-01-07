@@ -1199,8 +1199,19 @@ dependencies = [
 ]
 
 [[package]]
-name = "minst"
-version = "0.1.0"
+name = "mio"
+version = "1.0.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "2886843bf800fba2e3377cff24abf6379b4c4d5c6681eaf9ea5b0d15090450bd"
+dependencies = [
+ "libc",
+ "wasi",
+ "windows-sys 0.52.0",
+]
+
+[[package]]
+name = "mnist"
+version = "0.2.0"
 dependencies = [
  "axum",
  "console_error_panic_hook",
@@ -1214,17 +1225,6 @@ dependencies = [
  "tower",
  "tower-http",
  "wasm-bindgen",
-]
-
-[[package]]
-name = "mio"
-version = "1.0.3"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "2886843bf800fba2e3377cff24abf6379b4c4d5c6681eaf9ea5b0d15090450bd"
-dependencies = [
- "libc",
- "wasi",
- "windows-sys 0.52.0",
 ]
 
 [[package]]
