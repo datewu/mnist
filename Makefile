@@ -5,7 +5,7 @@
 # run cargo leptos watch in dev mode
 watch:
 	#cargo leptos watch 
-	cargo leptos watch --hot-reload
+	cargo leptos watch --hot-reload --features ndarray
 release:
 	cargo leptos build --release
 
