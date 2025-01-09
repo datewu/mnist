@@ -1,20 +1,12 @@
 -include .envrc
 
-.PHONY: watch release serve test-release fmt-leptos
+.PHONY: build run 
 
 # run cargo leptos watch in dev mode
-watch:
+build:
 	#cargo leptos watch 
-	cargo leptos watch --hot-reload  --features ndarray
-release:
-	cargo leptos build --release --features ndarray
-
-serve: release
-	./target/release/mnist
-
-test-release: test
-	cargo leptos end-to-end --release
-
-fmt-leptos:
-	leptosfmt ./**/*.rs
+	rustup target add wasm32-unknown-unknown
+	wasm-pack build --out-dir pkg --release --target web --no-typescript --no-default-features --features ndarray
+run: build
+	python3 -m http.server 8000
 

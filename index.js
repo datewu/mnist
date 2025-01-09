@@ -45,10 +45,10 @@ export function cropScaleGetImageData(mainContext, cropContext, scaledContext) {
   scaledContext.drawImage(cropEl, 0, 0);
 
   // Extract image data and convert into single value (greyscale) array
-  //const data = rgba2gray(scaledContext.getImageData(0, 0, 28, 28).data);
+  const data = rgba2gray(scaledContext.getImageData(0, 0, 28, 28).data);
   scaledContext.restore();
 
-  // return data;
+  return data;
 }
 
 /**

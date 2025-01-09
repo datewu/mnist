@@ -1,1 +1,7 @@
-2025年 01月 07日 星期二 11:12:05 CST
+# 2025年 01月 09日 星期四 21:13:40 CST
+
+```shell
+cargo install wasm-pack
+make run
+
+```
