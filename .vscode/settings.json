@@ -1,4 +1,5 @@
 {
+  "rust-analyzer.cargo.features": ["ssr", "hydrate"],
   "rust-analyzer.procMacro.ignored": {
     "leptos_macro": ["server"]
   },

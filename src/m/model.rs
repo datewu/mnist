@@ -1,6 +1,7 @@
 #![allow(clippy::new_without_default)]
 
 // Originally copied from the burn/examples/mnist package
+
 use burn::{
     nn::{BatchNorm, PaddingConfig2d},
     prelude::*,
