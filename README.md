@@ -11,6 +11,17 @@ but using Leptos `ssr` feature bring me a lot of fun.
 The origin Burn demo Readme document is [here](https://github.com/tracel-ai/burn/tree/main/examples/mnist-inference-web#readme).
 Defintily check it out :)
 
+## Run
+
+```shell
+# --release mode
+make serve
+
+# develop mode
+make watch
+
+```
+
 ## what did you do actually?
 
 1. I move the origin lib crate to a `m` module,
