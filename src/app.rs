@@ -137,8 +137,13 @@ fn TheCanvas() -> impl IntoView {
         };
     };
     view! {
-        // <input id="hidden-input" prop:value=inference />
+        // leptos will update input data-value attribute
+        // which will be observered by MutationObserver defined in run.js file
+        // which will update the chart
         <input id="hidden-input" hidden data-value=inference />
+        // when user done with drawing, a click event will be triggered on the button below
+        // then the inference function will be called
+        // the click event was dispathed in run.js file
         <button id="hidden-btn" on:click=handle_inference>
             Click me
         </button>

@@ -1,6 +1,6 @@
-# MNIST Inference Web App Using burn
+# MNIST Inference Web App Using burn and leptos
 
-A simple web app for inference with a trained MNIST model using Leptos.
+A simple web app for inference with a trained MNIST model using Burn and Leptos.
 
 Port [burn mnist inference](https://github.com/tracel-ai/burn/tree/main/examples/mnist-inference-web)
 which was a simple web page built by wasm-pack to a Leptos app.
@@ -22,7 +22,7 @@ make watch
 
 ```
 
-## what did you do actually?
+## What did you do actually?
 
 1. I move the origin lib crate to a `m` module,
 and lose the origin `web` module.
@@ -31,6 +31,8 @@ and lose the origin `web` module.
 3. Tweak index.js and index.html(mainly extract
 the `<script type="module">....</script>` to a `run.js` file) to make it work.
 4. Using `leptos` to build the web app.
+
+[视频](https://www.bilibili.com/video/BV1dnrkY9En9/)
 
 ## wasm-pack
 
